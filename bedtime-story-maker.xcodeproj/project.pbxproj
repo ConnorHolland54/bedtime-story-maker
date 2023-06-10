@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DE78FD442A34EB13003080B4 /* bedtime_story_makerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD432A34EB13003080B4 /* bedtime_story_makerApp.swift */; };
-		DE78FD462A34EB13003080B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD452A34EB13003080B4 /* ContentView.swift */; };
 		DE78FD482A34EB15003080B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78FD472A34EB15003080B4 /* Assets.xcassets */; };
 		DE78FD4B2A34EB15003080B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78FD4A2A34EB15003080B4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		DE78FD402A34EB13003080B4 /* bedtime-story-maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bedtime-story-maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE78FD432A34EB13003080B4 /* bedtime_story_makerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bedtime_story_makerApp.swift; sourceTree = "<group>"; };
-		DE78FD452A34EB13003080B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE78FD472A34EB15003080B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE78FD4A2A34EB15003080B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +33,7 @@
 		DE78FD372A34EB13003080B4 = {
 			isa = PBXGroup;
 			children = (
+				DE78FD512A34F0AC003080B4 /* Services */,
 				DE78FD422A34EB13003080B4 /* bedtime-story-maker */,
 				DE78FD412A34EB13003080B4 /* Products */,
 			);
@@ -51,8 +50,7 @@
 		DE78FD422A34EB13003080B4 /* bedtime-story-maker */ = {
 			isa = PBXGroup;
 			children = (
-				DE78FD432A34EB13003080B4 /* bedtime_story_makerApp.swift */,
-				DE78FD452A34EB13003080B4 /* ContentView.swift */,
+				DE78FD522A34F0BE003080B4 /* config */,
 				DE78FD472A34EB15003080B4 /* Assets.xcassets */,
 				DE78FD492A34EB15003080B4 /* Preview Content */,
 			);
@@ -65,6 +63,21 @@
 				DE78FD4A2A34EB15003080B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE78FD512A34F0AC003080B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DE78FD522A34F0BE003080B4 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				DE78FD432A34EB13003080B4 /* bedtime_story_makerApp.swift */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +150,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE78FD462A34EB13003080B4 /* ContentView.swift in Sources */,
 				DE78FD442A34EB13003080B4 /* bedtime_story_makerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
