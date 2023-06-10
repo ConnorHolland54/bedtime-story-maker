@@ -11,13 +11,13 @@ import SwiftUI
 struct bedtime_story_makerApp: App {
     var body: some Scene {
         WindowGroup {
-            Text("Hello World")
+            HomeScreen()
         }
     }
 }
 
 struct Previews_bedtime_story_makerApp_Previews: PreviewProvider {
     static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+        HomeScreen()
     }
 }
