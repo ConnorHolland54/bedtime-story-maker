@@ -18,7 +18,7 @@ struct HomeScreen: View {
                 .tabItem {
                     Label("New Book", systemImage: "book.fill")
                 }
-            Text("Screen 3")
+            ProfileScreen()
                 .tabItem {
                     Label("Profile", systemImage: "person.fill")
                 }

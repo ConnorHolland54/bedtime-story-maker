@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FBD292EA43B8AD2E2D3FF09 /* Pods_bedtime_story_maker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C1FCA73FC48F5385E18285 /* Pods_bedtime_story_maker.framework */; };
 		DE78FD442A34EB13003080B4 /* bedtime_story_makerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD432A34EB13003080B4 /* bedtime_story_makerApp.swift */; };
 		DE78FD482A34EB15003080B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78FD472A34EB15003080B4 /* Assets.xcassets */; };
 		DE78FD4B2A34EB15003080B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78FD4A2A34EB15003080B4 /* Preview Assets.xcassets */; };
@@ -17,9 +18,12 @@
 		DE78FD622A355DA3003080B4 /* TestBookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD612A355DA3003080B4 /* TestBookData.swift */; };
 		DE78FD652A355DFF003080B4 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD642A355DFF003080B4 /* BookModel.swift */; };
 		DE78FD6A2A357FB5003080B4 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD692A357FB5003080B4 /* ArrowButton.swift */; };
+		DE91166E2A36877D00A47C27 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE91166D2A36877D00A47C27 /* ProfileScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4759DE9F7FBD5D56EC8F313B /* Pods-bedtime-story-maker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bedtime-story-maker.release.xcconfig"; path = "Target Support Files/Pods-bedtime-story-maker/Pods-bedtime-story-maker.release.xcconfig"; sourceTree = "<group>"; };
+		B3C1FCA73FC48F5385E18285 /* Pods_bedtime_story_maker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bedtime_story_maker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE78FD402A34EB13003080B4 /* bedtime-story-maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bedtime-story-maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE78FD432A34EB13003080B4 /* bedtime_story_makerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bedtime_story_makerApp.swift; sourceTree = "<group>"; };
 		DE78FD472A34EB15003080B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +35,8 @@
 		DE78FD612A355DA3003080B4 /* TestBookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBookData.swift; sourceTree = "<group>"; };
 		DE78FD642A355DFF003080B4 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		DE78FD692A357FB5003080B4 /* ArrowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
+		DE91166D2A36877D00A47C27 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		E10197EA0AAAB2CA63A90503 /* Pods-bedtime-story-maker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bedtime-story-maker.debug.xcconfig"; path = "Target Support Files/Pods-bedtime-story-maker/Pods-bedtime-story-maker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,18 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FBD292EA43B8AD2E2D3FF09 /* Pods_bedtime_story_maker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BC98BA5C189EA60E4502574 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3C1FCA73FC48F5385E18285 /* Pods_bedtime_story_maker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE78FD372A34EB13003080B4 = {
 			isa = PBXGroup;
 			children = (
 				DE78FD512A34F0AC003080B4 /* Services */,
 				DE78FD422A34EB13003080B4 /* bedtime-story-maker */,
 				DE78FD412A34EB13003080B4 /* Products */,
+				F6A67059EECF681AB9FC9A1E /* Pods */,
+				5BC98BA5C189EA60E4502574 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +137,7 @@
 			children = (
 				DE78FD572A352AC2003080B4 /* HomeScreen.swift */,
 				DE78FD592A352D3A003080B4 /* LibraryScreen.swift */,
+				DE91166D2A36877D00A47C27 /* ProfileScreen.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -157,6 +175,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		F6A67059EECF681AB9FC9A1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E10197EA0AAAB2CA63A90503 /* Pods-bedtime-story-maker.debug.xcconfig */,
+				4759DE9F7FBD5D56EC8F313B /* Pods-bedtime-story-maker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE78FD4E2A34EB15003080B4 /* Build configuration list for PBXNativeTarget "bedtime-story-maker" */;
 			buildPhases = (
+				362AFC5024BAF6CD04BEFE76 /* [CP] Check Pods Manifest.lock */,
 				DE78FD3C2A34EB13003080B4 /* Sources */,
 				DE78FD3D2A34EB13003080B4 /* Frameworks */,
 				DE78FD3E2A34EB13003080B4 /* Resources */,
+				2B545D7BD98AC855AE4CD8FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +251,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B545D7BD98AC855AE4CD8FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bedtime-story-maker/Pods-bedtime-story-maker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bedtime-story-maker/Pods-bedtime-story-maker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bedtime-story-maker/Pods-bedtime-story-maker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		362AFC5024BAF6CD04BEFE76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bedtime-story-maker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE78FD3C2A34EB13003080B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -231,6 +302,7 @@
 				DE78FD5A2A352D3A003080B4 /* LibraryScreen.swift in Sources */,
 				DE78FD5D2A35308F003080B4 /* BookTitleView.swift in Sources */,
 				DE78FD442A34EB13003080B4 /* bedtime_story_makerApp.swift in Sources */,
+				DE91166E2A36877D00A47C27 /* ProfileScreen.swift in Sources */,
 				DE78FD622A355DA3003080B4 /* TestBookData.swift in Sources */,
 				DE78FD5F2A35331D003080B4 /* BookView.swift in Sources */,
 				DE78FD6A2A357FB5003080B4 /* ArrowButton.swift in Sources */,
@@ -357,6 +429,7 @@
 		};
 		DE78FD4F2A34EB15003080B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E10197EA0AAAB2CA63A90503 /* Pods-bedtime-story-maker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +459,7 @@
 		};
 		DE78FD502A34EB15003080B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4759DE9F7FBD5D56EC8F313B /* Pods-bedtime-story-maker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
