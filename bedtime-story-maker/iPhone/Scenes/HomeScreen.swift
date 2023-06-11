@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeScreen: View {
     var body: some View {
         TabView {
-            Text("Screen 1")
+            LibraryScreen()
                 .tabItem {
                     Label("Library", systemImage: "folder.fill")
                 }

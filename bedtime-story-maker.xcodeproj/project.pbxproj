@@ -11,6 +11,12 @@
 		DE78FD482A34EB15003080B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78FD472A34EB15003080B4 /* Assets.xcassets */; };
 		DE78FD4B2A34EB15003080B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78FD4A2A34EB15003080B4 /* Preview Assets.xcassets */; };
 		DE78FD582A352AC2003080B4 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD572A352AC2003080B4 /* HomeScreen.swift */; };
+		DE78FD5A2A352D3A003080B4 /* LibraryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD592A352D3A003080B4 /* LibraryScreen.swift */; };
+		DE78FD5D2A35308F003080B4 /* BookTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD5C2A35308F003080B4 /* BookTitleView.swift */; };
+		DE78FD5F2A35331D003080B4 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD5E2A35331D003080B4 /* BookView.swift */; };
+		DE78FD622A355DA3003080B4 /* TestBookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD612A355DA3003080B4 /* TestBookData.swift */; };
+		DE78FD652A355DFF003080B4 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD642A355DFF003080B4 /* BookModel.swift */; };
+		DE78FD6A2A357FB5003080B4 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD692A357FB5003080B4 /* ArrowButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		DE78FD472A34EB15003080B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE78FD4A2A34EB15003080B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE78FD572A352AC2003080B4 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		DE78FD592A352D3A003080B4 /* LibraryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryScreen.swift; sourceTree = "<group>"; };
+		DE78FD5C2A35308F003080B4 /* BookTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTitleView.swift; sourceTree = "<group>"; };
+		DE78FD5E2A35331D003080B4 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		DE78FD612A355DA3003080B4 /* TestBookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBookData.swift; sourceTree = "<group>"; };
+		DE78FD642A355DFF003080B4 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		DE78FD692A357FB5003080B4 /* ArrowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,10 @@
 		DE78FD422A34EB13003080B4 /* bedtime-story-maker */ = {
 			isa = PBXGroup;
 			children = (
+				DE78FD602A355D8A003080B4 /* TestData */,
 				DE78FD552A352A24003080B4 /* iPad */,
 				DE78FD542A352A18003080B4 /* iPhone */,
+				DE78FD662A356933003080B4 /* Utilities */,
 				DE78FD522A34F0BE003080B4 /* config */,
 				DE78FD472A34EB15003080B4 /* Assets.xcassets */,
 				DE78FD492A34EB15003080B4 /* Preview Content */,
@@ -72,6 +86,7 @@
 		DE78FD512A34F0AC003080B4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DE78FD632A355DCF003080B4 /* LibraryService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -87,6 +102,7 @@
 		DE78FD542A352A18003080B4 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				DE78FD5B2A35307C003080B4 /* Components */,
 				DE78FD562A352A4C003080B4 /* Scenes */,
 			);
 			path = iPhone;
@@ -103,8 +119,42 @@
 			isa = PBXGroup;
 			children = (
 				DE78FD572A352AC2003080B4 /* HomeScreen.swift */,
+				DE78FD592A352D3A003080B4 /* LibraryScreen.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DE78FD5B2A35307C003080B4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE78FD5C2A35308F003080B4 /* BookTitleView.swift */,
+				DE78FD5E2A35331D003080B4 /* BookView.swift */,
+				DE78FD692A357FB5003080B4 /* ArrowButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DE78FD602A355D8A003080B4 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				DE78FD612A355DA3003080B4 /* TestBookData.swift */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		DE78FD632A355DCF003080B4 /* LibraryService */ = {
+			isa = PBXGroup;
+			children = (
+				DE78FD642A355DFF003080B4 /* BookModel.swift */,
+			);
+			path = LibraryService;
+			sourceTree = "<group>";
+		};
+		DE78FD662A356933003080B4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +228,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE78FD582A352AC2003080B4 /* HomeScreen.swift in Sources */,
+				DE78FD5A2A352D3A003080B4 /* LibraryScreen.swift in Sources */,
+				DE78FD5D2A35308F003080B4 /* BookTitleView.swift in Sources */,
 				DE78FD442A34EB13003080B4 /* bedtime_story_makerApp.swift in Sources */,
+				DE78FD622A355DA3003080B4 /* TestBookData.swift in Sources */,
+				DE78FD5F2A35331D003080B4 /* BookView.swift in Sources */,
+				DE78FD6A2A357FB5003080B4 /* ArrowButton.swift in Sources */,
+				DE78FD652A355DFF003080B4 /* BookModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
