@@ -82,9 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				DE78FD602A355D8A003080B4 /* TestData */,
-				DE78FD552A352A24003080B4 /* iPad */,
 				DE78FD542A352A18003080B4 /* iPhone */,
-				DE78FD662A356933003080B4 /* Utilities */,
 				DE78FD522A34F0BE003080B4 /* config */,
 				DE78FD472A34EB15003080B4 /* Assets.xcassets */,
 				DE78FD492A34EB15003080B4 /* Preview Content */,
@@ -125,13 +123,6 @@
 			path = iPhone;
 			sourceTree = "<group>";
 		};
-		DE78FD552A352A24003080B4 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = iPad;
-			sourceTree = "<group>";
-		};
 		DE78FD562A352A4C003080B4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,13 +157,6 @@
 				DE78FD642A355DFF003080B4 /* BookModel.swift */,
 			);
 			path = LibraryService;
-			sourceTree = "<group>";
-		};
-		DE78FD662A356933003080B4 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		F6A67059EECF681AB9FC9A1E /* Pods */ = {
