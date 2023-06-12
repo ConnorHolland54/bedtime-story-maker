@@ -1,0 +1,6 @@
+framework module Pods_bedtime_story_maker {
+  umbrella header "Pods-bedtime-story-maker-umbrella.h"
+
+  export *
+  module * { export * }
+}
