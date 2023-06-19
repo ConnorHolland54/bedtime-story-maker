@@ -9,6 +9,17 @@ import SwiftUI
 
 struct HomeScreen: View {
     var body: some View {
+        CustomTabView()
+    }
+}
+
+struct CustomTabView: View {
+    init() {
+        UITabBar.appearance().backgroundColor = .black
+        UITabBar.appearance().alpha = 0.9
+        UITabBar.appearance().barTintColor = .gray
+    }
+    var body: some View {
         TabView {
             LibraryScreen()
                 .tabItem {
@@ -23,6 +34,7 @@ struct HomeScreen: View {
                     Label("Profile", systemImage: "person.fill")
                 }
         }
+        .tint(.white)
     }
 }
 
