@@ -35,6 +35,16 @@ struct CustomTabView: View {
                 }
         }
         .tint(.white)
+        .onAppear {
+            NewBookRepository().getNewBookData { result in
+                switch result {
+                case .success(let model):
+                    print(model)
+                case .failure(_):
+                    break
+                }
+            }
+        }
     }
 }
 

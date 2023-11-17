@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct BookTitleView: View {
-    let book: Book
+//    let book: Book
     var body: some View {
         VStack {
             Image("book")
                 .resizable()
                 .frame(width: 160, height: 130)
-            Text(book.title)
+            Text("Test")
         }
     }
 }
 
 struct BookTitleView_Previews: PreviewProvider {
     static var previews: some View {
-        BookTitleView(book: booksTestData.first!)
+        BookTitleView()
     }
 }

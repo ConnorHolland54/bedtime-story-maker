@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4FBD292EA43B8AD2E2D3FF09 /* Pods_bedtime_story_maker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C1FCA73FC48F5385E18285 /* Pods_bedtime_story_maker.framework */; };
+		DE6299A42B07D43D00249DD9 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6299A32B07D43D00249DD9 /* BookModel.swift */; };
+		DE6299A62B07D68300249DD9 /* NewBookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6299A52B07D68300249DD9 /* NewBookRepository.swift */; };
 		DE78FD442A34EB13003080B4 /* bedtime_story_makerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD432A34EB13003080B4 /* bedtime_story_makerApp.swift */; };
 		DE78FD482A34EB15003080B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78FD472A34EB15003080B4 /* Assets.xcassets */; };
 		DE78FD4B2A34EB15003080B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78FD4A2A34EB15003080B4 /* Preview Assets.xcassets */; };
@@ -16,7 +18,6 @@
 		DE78FD5D2A35308F003080B4 /* BookTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD5C2A35308F003080B4 /* BookTitleView.swift */; };
 		DE78FD5F2A35331D003080B4 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD5E2A35331D003080B4 /* BookView.swift */; };
 		DE78FD622A355DA3003080B4 /* TestBookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD612A355DA3003080B4 /* TestBookData.swift */; };
-		DE78FD652A355DFF003080B4 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD642A355DFF003080B4 /* BookModel.swift */; };
 		DE78FD6A2A357FB5003080B4 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78FD692A357FB5003080B4 /* ArrowButton.swift */; };
 		DE91166E2A36877D00A47C27 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE91166D2A36877D00A47C27 /* ProfileScreen.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* Begin PBXFileReference section */
 		4759DE9F7FBD5D56EC8F313B /* Pods-bedtime-story-maker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bedtime-story-maker.release.xcconfig"; path = "Target Support Files/Pods-bedtime-story-maker/Pods-bedtime-story-maker.release.xcconfig"; sourceTree = "<group>"; };
 		B3C1FCA73FC48F5385E18285 /* Pods_bedtime_story_maker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bedtime_story_maker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6299A32B07D43D00249DD9 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		DE6299A52B07D68300249DD9 /* NewBookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookRepository.swift; sourceTree = "<group>"; };
 		DE78FD402A34EB13003080B4 /* bedtime-story-maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bedtime-story-maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE78FD432A34EB13003080B4 /* bedtime_story_makerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bedtime_story_makerApp.swift; sourceTree = "<group>"; };
 		DE78FD472A34EB15003080B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,7 +36,6 @@
 		DE78FD5C2A35308F003080B4 /* BookTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTitleView.swift; sourceTree = "<group>"; };
 		DE78FD5E2A35331D003080B4 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		DE78FD612A355DA3003080B4 /* TestBookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBookData.swift; sourceTree = "<group>"; };
-		DE78FD642A355DFF003080B4 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		DE78FD692A357FB5003080B4 /* ArrowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
 		DE91166D2A36877D00A47C27 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		E10197EA0AAAB2CA63A90503 /* Pods-bedtime-story-maker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bedtime-story-maker.debug.xcconfig"; path = "Target Support Files/Pods-bedtime-story-maker/Pods-bedtime-story-maker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +59,15 @@
 				B3C1FCA73FC48F5385E18285 /* Pods_bedtime_story_maker.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE6299A22B07D37500249DD9 /* NewBookService */ = {
+			isa = PBXGroup;
+			children = (
+				DE6299A32B07D43D00249DD9 /* BookModel.swift */,
+				DE6299A52B07D68300249DD9 /* NewBookRepository.swift */,
+			);
+			path = NewBookService;
 			sourceTree = "<group>";
 		};
 		DE78FD372A34EB13003080B4 = {
@@ -101,7 +112,7 @@
 		DE78FD512A34F0AC003080B4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DE78FD632A355DCF003080B4 /* LibraryService */,
+				DE6299A22B07D37500249DD9 /* NewBookService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -149,14 +160,6 @@
 				DE78FD612A355DA3003080B4 /* TestBookData.swift */,
 			);
 			path = TestData;
-			sourceTree = "<group>";
-		};
-		DE78FD632A355DCF003080B4 /* LibraryService */ = {
-			isa = PBXGroup;
-			children = (
-				DE78FD642A355DFF003080B4 /* BookModel.swift */,
-			);
-			path = LibraryService;
 			sourceTree = "<group>";
 		};
 		F6A67059EECF681AB9FC9A1E /* Pods */ = {
@@ -285,12 +288,13 @@
 				DE78FD582A352AC2003080B4 /* HomeScreen.swift in Sources */,
 				DE78FD5A2A352D3A003080B4 /* LibraryScreen.swift in Sources */,
 				DE78FD5D2A35308F003080B4 /* BookTitleView.swift in Sources */,
+				DE6299A42B07D43D00249DD9 /* BookModel.swift in Sources */,
 				DE78FD442A34EB13003080B4 /* bedtime_story_makerApp.swift in Sources */,
 				DE91166E2A36877D00A47C27 /* ProfileScreen.swift in Sources */,
 				DE78FD622A355DA3003080B4 /* TestBookData.swift in Sources */,
 				DE78FD5F2A35331D003080B4 /* BookView.swift in Sources */,
 				DE78FD6A2A357FB5003080B4 /* ArrowButton.swift in Sources */,
-				DE78FD652A355DFF003080B4 /* BookModel.swift in Sources */,
+				DE6299A62B07D68300249DD9 /* NewBookRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

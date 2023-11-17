@@ -12,16 +12,16 @@ struct LibraryScreen: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
-                    ForEach((0..<booksTestData.count), id: \.self) { index in
-                        NavigationLink {
-                            BookView(book: booksTestData[index])
-                        } label: {
-                            BookTitleView(book: booksTestData[index])
-                                .foregroundColor(.black)
-                        }
-                    }
-                }
+//                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
+//                    ForEach((0..<booksTestData.count), id: \.self) { index in
+//                        NavigationLink {
+//                            BookView(book: booksTestData[index])
+//                        } label: {
+//                            BookTitleView(book: booksTestData[index])
+//                                .foregroundColor(.black)
+//                        }
+//                    }
+//                }
             }
         }
     }
