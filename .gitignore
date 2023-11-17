@@ -1,0 +1,19 @@
+# Xcode
+.DS_Store
+*/.DS_Store
+*/xcuserdata/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Swift Package Manager
+Packages/
+.package.resolved
+
+# Build products
+build/
+DerivedData/
+
+# Dependency manager files
+Carthage/
