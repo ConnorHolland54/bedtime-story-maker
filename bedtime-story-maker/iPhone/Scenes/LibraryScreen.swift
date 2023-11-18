@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct LibraryScreen: View {
+    @State private var book: BookModel?
     
     var body: some View {
         NavigationStack {
             ScrollView {
+                if let book = book {
+                    NavigationLink {
+                        BookView(book: book)
+                    } label: {
+                        BookTitleView(book: book)
+                    }
+                }
 //                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
 //                    ForEach((0..<booksTestData.count), id: \.self) { index in
 //                        NavigationLink {
@@ -22,6 +30,16 @@ struct LibraryScreen: View {
 //                        }
 //                    }
 //                }
+            }
+        }
+        .onAppear {
+            NewBookRepository().getNewBookData { result in
+                switch result {
+                case .success(let model):
+                    self.book = model
+                case .failure(_):
+                    break
+                }
             }
         }
     }
